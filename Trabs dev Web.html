@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Bruno Tirola Zambon Ferreira</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .container {
+            display: flex;
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            position: relative;
+            padding: 20px;
+        }
+        .left-side {
+            flex: 1;
+            background-color: #505050;
+            color: #fff;
+            padding: 30px;
+            border-radius: 8px 0 0 8px;
+            position: relative;
+        }
+        .right-side {
+            flex: 2;
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 0 8px 8px 0;
+            position: relative;
+        }
+        .border-triangle {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 15px solid #DAA520;
+        }
+        .left-triangle-top {
+            top: 20px;
+            left: -15px;
+        }
+        .left-triangle-bottom {
+            bottom: 20px;
+            left: -15px;
+            transform: rotate(180deg);
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2em;
+            margin-top: 0;
+        }
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6em;
+            color: #DAA520;
+            margin-top: 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #DAA520;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #B8860B;
+        }
+        button {
+            background-color: #DAA520;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 10; /* Garante que o botão fique visível */
+        }
+        button:hover {
+            background-color: #B8860B;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="border-triangle left-triangle-top"></div>
+        <div class="border-triangle left-triangle-bottom"></div>
+        <button onclick="toggleDarkMode()">Modo Escuro</button>
+        <div class="left-side">
+            <h1>Bruno Tirola Zambon Ferreira</h1>
+            <p>Brasileiro • Solteiro • 22 anos</p>
+            <p><a href="mailto:brunoferreir@.com.br">brunoferreir@.com.br</a></p>
+            <p>(27) 94002-8922</p>
+        </div>
+        <div class="right-side">
+            <section>
+                <h2>Experiência</h2>
+                <ul>
+                    <li><strong>Excel</strong> - Analista de planilhas<br>2020 - 2021</li>
+                    <li><strong>Entel Ltda.</strong> - Almoxarifado<br>2021 - 2022</li>
+                    <li><strong>Redes Sociais</strong> - Influenciador digital<br>2022 - 2023</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Formação</h2>
+                <ul>
+                    <li><strong>Graduando em Ciências da Computação</strong><br>Estácio de Sá - Vitória/ES - 2024/2028</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Idiomas</h2>
+                <ul>
+                    <li>Inglês: Leitura Fluente, Escrita Avançada, Fala Avançada</li>
+                    <li>Espanhol: Leitura Avançada, Escrita Intermediária, Fala Básica</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Interesses</h2>
+                <ul>
+                    <li>Ser próspero</li>
+                    <li>Ser saudável</li>
+                    <li>Ser feliz</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
