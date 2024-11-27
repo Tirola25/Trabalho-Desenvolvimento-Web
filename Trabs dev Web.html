@@ -31,6 +31,7 @@
             padding: 30px;
             border-radius: 8px 0 0 8px;
             position: relative;
+            text-align: center;
         }
         .right-side {
             flex: 2;
@@ -98,6 +99,14 @@
         button:hover {
             background-color: #B8860B;
         }
+        /* Estilo para a imagem */
+        .profile-img {
+            width: 120px; /* Define o tamanho da imagem */
+            height: 120px; /* Define o tamanho da imagem */
+            border-radius: 50%; /* Torna a imagem circular */
+            object-fit: cover; /* Faz com que a imagem se ajuste bem dentro do contêiner */
+            margin-bottom: 20px; /* Espaço abaixo da imagem */
+        }
     </style>
 </head>
 <body>
@@ -106,6 +115,8 @@
         <div class="border-triangle left-triangle-bottom"></div>
         <button onclick="toggleDarkMode()">Modo Escuro</button>
         <div class="left-side">
+            <!-- Adicionando a imagem do perfil -->
+            <img src="foto_perfil.jpg" alt="Foto de Perfil" class="profile-img"> <!-- Caminho da imagem -->
             <h1>Bruno Tirola Zambon Ferreira</h1>
             <p>Brasileiro • Solteiro • 22 anos</p>
             <p><a href="mailto:brunoferreir@.com.br">brunoferreir@.com.br</a></p>
